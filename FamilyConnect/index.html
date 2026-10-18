@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FamilyConnect – Đăng nhập</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="login-card">
+    <header class="login-header">
+      <h1 class="logo">FamilyConnect</h1>
+      <p class="tagline">Nền tảng cộng đồng gia đình số</p>
+    </header>
+
+    <!-- Giao diện tĩnh: nút không gửi dữ liệu đi đâu cả -->
+    <form class="login-form" novalidate>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="ten@example.com" autocomplete="username">
+      </div>
+
+      <div class="field">
+        <label for="password">Mật khẩu</label>
+        <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" autocomplete="current-password">
+      </div>
+
+      <div class="options">
+        <label class="remember">
+          <input type="checkbox" name="remember">
+          <span>Ghi nhớ đăng nhập</span>
+        </label>
+        <a href="#" class="link">Quên mật khẩu?</a>
+      </div>
+
+      <button type="button" class="btn">Đăng nhập</button>
+    </form>
+
+    <p class="footer-text">Chưa có tài khoản? <a href="#" class="link">Đăng ký</a></p>
+  </main>
+</body>
+</html>

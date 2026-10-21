@@ -14,7 +14,7 @@
 <details class="card"><summary>Thêm thành viên mới</summary>
   <div class="form-grid">
     <div><label for="full_name">Họ và tên</label><input id="full_name"></div>
-    <div><label for="gender">Giới tính</label><select id="gender"><option>MALE</option><option>FEMALE</option><option>OTHER</option></select></div>
+    <div><label for="gender">Giới tính</label><select id="gender" data-enum="Gender"></select></div>
     <div><label for="dob">Ngày sinh (date_of_birth)</label><input id="dob" type="date"></div>
     <div><label for="dod">Ngày mất (date_of_death)</label><input id="dod" type="date"></div>
     <div><label for="gen">Thế hệ</label><input id="gen" type="number" min="1"></div>
@@ -33,13 +33,14 @@
 <section class="card table-wrap"><table>
   <thead><tr><th>Họ tên</th><th>Giới tính</th><th>date_of_birth</th><th>Thế hệ</th><th>Nghề nghiệp</th><th>Nơi ở</th><th>Xác minh</th><th></th></tr></thead>
   <tbody>
-    <tr><td>Nguyễn Văn Bình</td><td>MALE</td><td>12/03/1958</td><td>2</td><td>Giáo viên</td><td>TP. Hồ Chí Minh</td><td><span class="badge ok">Đã xác minh</span></td><td><a href="tree.html">Xem trên cây</a></td></tr>
-    <tr><td>Nguyễn Minh Khang</td><td>MALE</td><td>05/07/1985</td><td>3</td><td>Kỹ sư phần mềm</td><td>TP. Hồ Chí Minh</td><td><span class="badge ok">Đã xác minh</span></td><td><a href="tree.html">Xem trên cây</a></td></tr>
-    <tr><td>Nguyễn Thu Hà</td><td>FEMALE</td><td>21/09/1989</td><td>3</td><td>Bác sĩ</td><td>Hà Nội</td><td><span class="badge warn">Chờ duyệt</span></td><td><a href="tree.html">Xem trên cây</a></td></tr>
+    <tr><td>Nguyễn Văn Bình</td><td data-enum-label="Gender">MALE</td><td>12/03/1958</td><td>2</td><td>Giáo viên</td><td>TP. Hồ Chí Minh</td><td><span class="badge ok">Đã xác minh</span></td><td><a href="tree.html">Xem trên cây</a></td></tr>
+    <tr><td>Nguyễn Minh Khang</td><td data-enum-label="Gender">MALE</td><td>05/07/1985</td><td>3</td><td>Kỹ sư phần mềm</td><td>TP. Hồ Chí Minh</td><td><span class="badge ok">Đã xác minh</span></td><td><a href="tree.html">Xem trên cây</a></td></tr>
+    <tr><td>Nguyễn Thu Hà</td><td data-enum-label="Gender">FEMALE</td><td>21/09/1989</td><td>3</td><td>Bác sĩ</td><td>Hà Nội</td><td><span class="badge warn">Chờ duyệt</span></td><td><a href="tree.html">Xem trên cây</a></td></tr>
   </tbody>
 </table></section>
 </main>
 </div>
-<script src="src/components/Layout.js"></script>
+<script src="js/components/Layout.js"></script>
+<script type="module" src="js/components/EnumBinder.js"></script>
 </body>
 </html>

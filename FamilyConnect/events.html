@@ -25,13 +25,13 @@
 <section class="grid">
   <article class="card"><h2>Giỗ tổ dòng họ</h2>
     <ul class="list"><li>Bắt đầu: 20/11/2026 08:00</li><li>Kết thúc: 20/11/2026 14:00</li><li>Địa điểm: Nhà thờ họ, Long An</li></ul>
-    <p class="muted">THAM GIA 42 · CHƯA CHẮC 9 · TỪ CHỐI 3</p>
-    <div class="row"><button type="button" class="btn small">THAM GIA</button><button type="button" class="btn secondary small">CHƯA CHẮC</button><button type="button" class="btn secondary small">TỪ CHỐI</button></div>
+    <p class="muted"><span data-enum-label="RsvpStatus">ATTENDING</span> 42 · <span data-enum-label="RsvpStatus">MAYBE</span> 9 · <span data-enum-label="RsvpStatus">DECLINED</span> 3</p>
+    <div class="row" data-enum-buttons="RsvpStatus"></div>
   </article>
   <article class="card"><h2>Họp mặt cuối năm</h2>
     <ul class="list"><li>Bắt đầu: 27/12/2026 18:00</li><li>Kết thúc: 27/12/2026 21:30</li><li>Địa điểm: Nhà hàng Sen Việt, TP. Hồ Chí Minh</li></ul>
-    <p class="muted">THAM GIA 18 · CHƯA CHẮC 12 · TỪ CHỐI 1</p>
-    <div class="row"><button type="button" class="btn small">THAM GIA</button><button type="button" class="btn secondary small">CHƯA CHẮC</button><button type="button" class="btn secondary small">TỪ CHỐI</button></div>
+    <p class="muted"><span data-enum-label="RsvpStatus">ATTENDING</span> 18 · <span data-enum-label="RsvpStatus">MAYBE</span> 12 · <span data-enum-label="RsvpStatus">DECLINED</span> 1</p>
+    <div class="row" data-enum-buttons="RsvpStatus"></div>
   </article>
 </section>
 
@@ -39,13 +39,14 @@
   <div class="table-wrap"><table>
     <thead><tr><th>Thành viên</th><th>Trạng thái (status)</th><th>created_at</th></tr></thead>
     <tbody>
-      <tr><td>Trần Thị Mai</td><td><span class="badge ok">THAM GIA</span></td><td>17/10/2026 20:40</td></tr>
-      <tr><td>Nguyễn Minh Khang</td><td><span class="badge warn">CHƯA CHẮC</span></td><td>17/10/2026 21:10</td></tr>
+      <tr><td>Trần Thị Mai</td><td><span class="badge ok" data-enum-label="RsvpStatus">ATTENDING</span></td><td>17/10/2026 20:40</td></tr>
+      <tr><td>Nguyễn Minh Khang</td><td><span class="badge warn" data-enum-label="RsvpStatus">MAYBE</span></td><td>17/10/2026 21:10</td></tr>
     </tbody>
   </table></div>
 </section>
 </main>
 </div>
-<script src="src/components/Layout.js"></script>
+<script src="js/components/Layout.js"></script>
+<script type="module" src="js/components/EnumBinder.js"></script>
 </body>
 </html>

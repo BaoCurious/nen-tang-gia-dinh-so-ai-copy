@@ -16,12 +16,12 @@
   <div class="table-wrap"><table>
     <thead><tr><th>user_id</th><th>Họ tên</th><th>Email</th><th>Vai trò (role)</th><th></th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>System Administrator</td><td>admin@familyconnect.local</td><td>SYSTEM_ADMIN</td><td></td></tr>
+      <tr><td>1</td><td>System Administrator</td><td>admin@familyconnect.local</td><td data-enum-label="Roles">SYSTEM_ADMIN</td><td></td></tr>
       <tr><td>2</td><td>Nguyễn Văn Bình</td><td>binh@example.com</td>
-        <td><select><option>FAMILY_ADMIN</option><option>FAMILY_MEMBER</option><option>GUEST</option></select></td>
+        <td><select aria-label="Vai trò" data-enum="Roles" data-enum-exclude="SYSTEM_ADMIN" data-enum-selected="FAMILY_ADMIN"></select></td>
         <td><button type="button" class="btn small">Lưu</button></td></tr>
       <tr><td>3</td><td>Nguyễn Thu Hà</td><td>ha@example.com</td>
-        <td><select><option>GUEST</option><option>FAMILY_MEMBER</option><option>FAMILY_ADMIN</option></select></td>
+        <td><select aria-label="Vai trò" data-enum="Roles" data-enum-exclude="SYSTEM_ADMIN" data-enum-selected="GUEST"></select></td>
         <td><button type="button" class="btn small">Lưu</button></td></tr>
     </tbody>
   </table></div>
@@ -61,5 +61,6 @@
 </main>
 </div>
 <script src="js/components/Layout.js"></script>
+<script type="module" src="js/components/EnumBinder.js"></script>
 </body>
 </html>

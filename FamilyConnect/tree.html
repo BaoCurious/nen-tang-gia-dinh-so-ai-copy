@@ -27,15 +27,15 @@
             <li><span class="node male">Nguyễn Minh Khang<small>1985 · Thế hệ 3</small></span></li>
             <li><span class="node female">Nguyễn Thu Hà<small>1989 · Thế hệ 3</small></span></li>
           </ul></li>
-        <li><span class="node female">Nguyễn Thị Cúc<small>1962 · Thế hệ 2</small><span class="badge warn">ADOPTED</span></span>
+        <li><span class="node female">Nguyễn Thị Cúc<small>1962 · Thế hệ 2</small><span class="badge warn" data-enum-label="RelationshipTypes">ADOPTED</span></span>
           <ul><li><span class="node male">Lê Gia Phúc<small>1990 · Thế hệ 3</small></span></li></ul></li>
       </ul>
     </li></ul>
-    <p class="muted">Viền xanh: MALE · viền hồng: FEMALE · nhãn ADOPTED: con nuôi (mặc định BIOLOGICAL).</p>
+    <p class="muted">Viền xanh: nam · viền hồng: nữ · quan hệ con nuôi (mặc định là con ruột).</p>
   </section>
   <aside>
     <section class="card"><h2>Nguyễn Văn Bình</h2>
-      <ul class="list"><li>Giới tính: MALE</li><li>date_of_birth: 12/03/1958</li><li>Thế hệ: 2 · Nhánh trưởng</li><li>Nghề nghiệp: Giáo viên</li><li>Đã xác minh <span class="badge ok">verified</span></li></ul>
+      <ul class="list"><li>Giới tính: <span data-enum-label="Gender">MALE</span></li><li>date_of_birth: 12/03/1958</li><li>Thế hệ: 2 · Nhánh trưởng</li><li>Nghề nghiệp: Giáo viên</li><li>Đã xác minh <span class="badge ok">verified</span></li></ul>
     </section>
     <section class="card"><h2>Trợ lý AI</h2>
       <label for="ai-q">Hỏi về quan hệ</label>
@@ -46,6 +46,7 @@
 </div>
 </main>
 </div>
-<script src="src/components/Layout.js"></script>
+<script src="js/components/Layout.js"></script>
+<script type="module" src="js/components/EnumBinder.js"></script>
 </body>
 </html>
